@@ -107,8 +107,3 @@ def calculate_average_of_averages(input_file_name, output_file_name):
         with open(output_file_name, 'w', newline='') as outfile:
             writer=csv.writer(outfile)
             writer.writerow([Total_Average])
-# calculate_averages('C:\\Users\\mopou\\Documents\\Scores.csv', 'C:\\Users\\mopou\\Documents\\Averages.csv')
-#calculate_sorted_averages('C:\\Users\\mopou\\Documents\\Scores.csv', 'C:\\Users\\mopou\\Documents\\Averages_sorted.csv')
-#calculate_three_best('C:\\Users\\mopou\\Documents\\Averages_sorted.csv','C:\\Users\\mopou\\Documents\\Three_best.csv')
-#calculate_three_worst('C:\\Users\\mopou\\Documents\\Scores.csv','C:\\Users\\mopou\\Documents\\Three_worst.csv')
-#calculate_average_of_averages('C:\\Users\\mopou\\Documents\\Scores.csv','C:\\Users\\mopou\\Documents\\Total_Averages.csv')

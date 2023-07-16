@@ -24,4 +24,3 @@ def hash_password_hack(input_file_name, output_file_name):
             writer=csv.writer(outfile)
             for u,v in Pass.items():
                 writer.writerow([u,v])                    
-#hash_password_hack('D:\\Python\\MakPractices\\Final\\name_pass.csv','D:\\Python\\MakPractices\\Final\\pass.csv')
