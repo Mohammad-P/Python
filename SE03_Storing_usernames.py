@@ -35,7 +35,7 @@ if Flag==True:
         pasw=input('Enter password as a combination of numbers and chars:')
 else: 
     print ('Invalid username and password') #print('connecting to the mydb')
-cnx = mysql.connector.connect(user='root', password='Mohammad123', host='127.0.0.1', database='employees')
+cnx = mysql.connector.connect(user='root', password='*******', host='127.0.0.1', database='employees')
 #print('Connected')
 cursor=cnx.cursor()
 cursor.execute('INSERT INTO userpass VALUES (%s,%s)',(uname,pasw))
