@@ -6,7 +6,7 @@ import json
 import re
 import requests
 import mysql.connector
-cnx = mysql.connector.connect(user='root', password='123456789', host='127.0.0.1', database='mydb')
+cnx = mysql.connector.connect(user='root', password='********', host='0.0.0.0', database='mydb')
 #make=input('Please input the manufacturere\'s name:').strip().lower()
 p=1
 while p <= 1000:
