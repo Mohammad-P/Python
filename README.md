@@ -1,2 +1,2 @@
 # Python
-My freelancing space of learning Python
+My freelancing space of Python training 
