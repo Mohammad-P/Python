@@ -11,7 +11,7 @@ address=re.sub(r'honda',make,site)
 page=requests.get(address)
 soup=bs4(page.content,'html.parser')
 val=soup.find_all("span",attrs={"class":"primary-price"})
-cnx = mysql.connector.connect(user='root', password='Mohammad123', host='127.0.0.1', database='mydb')
+cnx = mysql.connector.connect(user='root', password='***********', host='0.0.0.0', database='mydb')
 #print('Connected')
 count=0
 cursor=cnx.cursor()
@@ -23,11 +23,5 @@ for item in val:
     if count < 21:
         cursor.execute('INSERT INTO cars VALUES (%s,%s,%s);',(title,price,mileage))
         cnx.commit()
-        #print('{} {} {}'.format(title,price,mileage))
-# print('_________________________________________________')
-# query='SELECT * FROM cars;'
-# cursor.execute(query)
-# for (t,p,m) in cursor:
-#      print('%s %s %s' %(t,p,m))
 cursor.close()
 cnx.close()
